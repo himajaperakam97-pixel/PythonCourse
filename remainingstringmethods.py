@@ -120,15 +120,15 @@ print("hello {} hello {}".format(a,b))
 hello motu hello patlu
 #fstring()
 a="virat"
->>> b="kohli"
->>> print(f"hello {a}{b}")
+b="kohli"
+print(f"hello {a}{b}")
 hello viratkohli
->>> print(f"hello {a} {b}")
+print(f"hello {a} {b}")
 hello virat kohli
->>> print(f"hello {a} hello {b}")
+print(f"hello {a} hello {b}")
 hello virat hello kohli
->>> fname="himaja"
->>> lname="sai"
+fname="himaja"
+lname="sai"
 >>> print("{} {}" .format(fname,lname))
 himaja sai
 >>> print(f"{fname} {lname}")
@@ -151,3 +151,12 @@ Traceback (most recent call last):
 KeyError: 'a+b'
 >>> print("the sum is {}".format(a+b))
 the sum is 7
+>>> print("the sum is {}".format(a+b))
+the sum is 7
+>>> a=10
+>>> b=20
+>>> swap(b)
+Traceback (most recent call last):
+  File "<pyshell#104>", line 1, in <module>
+    swap(b)
+NameError: name 'swap' is not defined
